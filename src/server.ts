@@ -30,7 +30,7 @@ server.all('*', async (ctx, next) => {
 
 const port = process.env.PORT ? Number.parseInt(process.env.PORT, 10) : 3000;
 
-console.log(`Server listening on http://localhost:${port}`);
+console.info(`Server listening on http://localhost:${port}`);
 
 export default {
 	fetch: server.fetch,

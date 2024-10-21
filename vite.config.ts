@@ -3,10 +3,13 @@ import vike from 'vike/plugin';
 import type { UserConfig } from 'vite';
 
 export default {
-	plugins: [react(), vike({
-		redirects: {
-			'/external': 'https://example.com',
-			'/wee': '/woo'
-		}
-	})]
+	plugins: [
+		react(),
+		vike({
+			redirects: {
+				'/external': 'https://example.com',
+				'/wee': '/woo'
+			}
+		})
+	]
 } satisfies UserConfig;
