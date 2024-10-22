@@ -93,10 +93,12 @@ web_modules/
 .cache
 .parcel-cache
 
+# firebase-admin service-account
+firebase
+
 # Next.js build output
 .next
 out
-next-env.d.ts
 
 # Nuxt.js build / generate output
 .nuxt
@@ -138,3 +140,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Cloudflare
+.wrangler/
+
+# Sentry Vite Plugin
+.env.sentry-build-plugin
+
+# aws-cdk
+.cdk.staging
+cdk.out

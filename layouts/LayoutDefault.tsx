@@ -1,7 +1,7 @@
 import './style.css';
 
 import type React from 'react';
-import logoUrl from '../../public/logo.svg';
+import logoUrl from '../assets/logo.svg';
 import { Link } from '../components/Link.js';
 
 export default function LayoutDefault({ children }: { children: React.ReactNode }) {
@@ -16,6 +16,9 @@ export default function LayoutDefault({ children }: { children: React.ReactNode 
 			<Sidebar>
 				<Logo />
 				<Link href='/'>Welcome</Link>
+				<Link href='/todo'>Todo</Link>
+				<Link href='/star-wars'>Data Fetching</Link>
+				{''}
 			</Sidebar>
 			<Content>{children}</Content>
 		</div>

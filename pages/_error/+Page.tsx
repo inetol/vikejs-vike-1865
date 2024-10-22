@@ -1,3 +1,4 @@
+import React from 'react';
 import { usePageContext } from 'vike-react/usePageContext';
 
 export default function Page() {
